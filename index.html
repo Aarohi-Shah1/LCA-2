@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Trek Booking - Step 1</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<a href="index.html" class="back-btn">
+  <img src="assets/back-icon.png" alt="Back" />
+</a>
+
+<body>
+  <div class="container">
+    <h2>Booking Progress <span>Step 1 of 2</span></h2>
+    <div class="progress-bar"><div class="fill" style="width: 50%"></div></div><br>
+    <form id="bookingForm">
+      <label>Trek Name & Destination</label>
+      <input type="text" id="trekName" placeholder="eg. Mount Everest Base Camp Trek" required /><br>
+      
+      <label>Trek Start Date</label>
+      <input type="date" id="startDate" required /><br>
+      
+      <label>Group Size</label>
+      <select id="groupSize">
+        <option value="">Select number of people</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+      </select><br>
+      
+      <label>Difficulty Level</label>
+      <div class="difficulty">
+        <button type="button" class="diff-btn">Easy</button>
+        <button type="button" class="diff-btn">Medium</button>
+        <button type="button" class="diff-btn">Difficult</button>
+      </div>
+
+      <label>Medical Conditions</label><br><br>
+      <div class="checkbox-group">
+        <label class="checkbox-label">
+          <input type="checkbox" value="Asthma" />
+          <span class="custom-checkbox"></span> Asthma
+        </label>
+        <label class="checkbox-label">
+          <input type="checkbox" value="Diabetes" />
+          <span class="custom-checkbox"></span> Diabetes
+        </label>
+        <label class="checkbox-label">
+          <input type="checkbox" value="Migraine" />
+          <span class="custom-checkbox"></span> Migraine
+        </label>
+        <label class="checkbox-label">
+          <input type="checkbox" value="Heart Conditions" />
+          <span class="custom-checkbox"></span> Heart Conditions
+        </label>
+      </div>
+      
+      <label>Dietary Restrictions</label>
+      <select id="diet">
+        <option value="">None</option>
+        <option value="Vegetarian">Vegetarian</option>
+        <option value="Vegan">Vegan</option>
+      </select><br>
+      
+      <label>Trekking Experience</label>
+      <textarea id="experience"></textarea><br>
+      
+      <label>Emergency Contact</label>
+      <input type="text" id="emergencyName" placeholder="Contact Name" />
+      <input type="text" id="emergencyNumber" placeholder="Contact Number" /><br>
+     
+      <label>Equipment</label><br><br>
+      <div class="checkbox-group">
+        <label class="checkbox-label">
+          <input type="checkbox" value="Sleeping Bag" />
+          <span class="custom-checkbox"></span> Sleeping bag
+        </label>
+        <label class="checkbox-label">
+          <input type="checkbox" value="Compass" />
+          <span class="custom-checkbox"></span> Compass
+        </label>
+        <label class="checkbox-label">
+          <input type="checkbox" value="Torch" />
+          <span class="custom-checkbox"></span> Torch
+        </label>
+        <label class="checkbox-label">
+          <input type="checkbox" value="Trekking Backpack" />
+          <span class="custom-checkbox"></span> Backpack
+        </label>
+      </div>
+      
+      <label>Additional Equipment Requests</label>
+      <input type="text" id="extraEquipment" /><br>
+
+      <button type="submit" id="continueBtn">Continue</button>
+    </form>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

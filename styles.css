@@ -1,0 +1,236 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #0c1e25;
+  color: #fff;
+  padding: 1rem;
+}
+
+.container {
+  max-width: 400px;
+  margin: auto;
+  background: #102830;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+h2, h3 {
+  color: #fff;
+}
+
+input, select, textarea, button {
+  width: 100%;
+  margin: 5px 0 15px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+button {
+  background: #c9d735;
+  color: #000;
+  cursor: pointer;
+  padding: 12px;
+  font-size: 16px;
+}
+
+.progress-bar {
+  background: #333;
+  border-radius: 5px;
+  height: 6px;
+  margin: 10px 0;
+}
+
+.progress-bar .fill {
+  height: 100%;
+  background: #f9cb1e;
+  width: 50%;
+  border-radius: 5px;
+}
+
+.difficulty {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.diff-btn {
+  flex: 1;
+  text-align: center;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+}
+
+.diff-btn.active {
+  background-color: #f9cb1e;
+  color: #000;
+}
+
+.checkbox-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+
+.checkbox-label input {
+  display: none; 
+}
+
+.custom-checkbox {
+  width: 12px;
+  height: 12px;
+  border: 2px solid #f9cb1e;
+  border-radius: 50%;
+  margin-right: 10px;
+  position: relative;
+  cursor: pointer;
+}
+
+.checkbox-label input:checked + .custom-checkbox {
+  background-color: #f9cb1e;
+  border-color: #f9cb1e;
+}
+
+.checkbox-label input:checked + .custom-checkbox::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 8px;
+  height: 8px;
+  background-color: #000;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+
+label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 5px;
+}
+
+textarea {
+  resize: vertical;
+  height: 100px;
+}
+
+select, input[type="date"] {
+  width: 100%;
+}
+
+textarea, input {
+  width: 100%;
+}
+
+br {
+  margin-bottom: 10px;
+}
+.summary p {
+  display: flex;
+  justify-content: space-between;
+  margin: 8px 0;
+}
+.booking-row,
+.summary-row {
+  display: flex;
+  justify-content: space-between;
+  margin: 6px 0;
+}
+
+.summary-row.total {
+  font-weight: bold;
+  border-top: 1px solid #444;
+  padding-top: 10px;
+}
+
+.payment-option {
+  background-color: #1d3a46;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 15px;
+  transition: background 0.3s;
+}
+
+.payment-option:hover {
+  background-color: #29505f;
+}
+
+.payment-option label {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+  color: #fff;
+}
+
+.payment-option input[type="radio"] {
+  display: none;
+}
+
+.custom-radio {
+  width: 16px;
+  height: 16px;
+  border: 2px solid #f9cb1e;
+  border-radius: 50%;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.payment-option input[type="radio"]:checked + .custom-radio::after {
+  content: '';
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 8px;
+  height: 8px;
+  background-color: #f9cb1e;
+  border-radius: 50%;
+}
+
+.option-text {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.description {
+  font-size: 13px;
+  color: #ccc;
+  margin-left: 28px; /* aligns with text after radio */
+  margin-top: 4px;
+  line-height: 1.5;
+}
+
+
+.card-details-row {
+  display: flex;
+  gap: 40px;
+}
+
+.card-details-row .form-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.qr-section {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.qr-section img {
+  max-width: 150px;
+  margin: 10px auto;
+  display: block;
+}
+

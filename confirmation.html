@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Confirmation</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<a href="payment.html" class="back-btn">
+  <img src="assets/back-icon.png" alt="Back" />
+</a>
+
+<body>
+  <div class="container">
+    <h2>Payment Confirmation!</h2>
+    <img src="assets/payment-successful.png" alt="QR Code" />
+    <h3>Booking Details</h3>
+    <div class="booking-details">
+      <div class="booking-row"><span>Trek Plan:</span> <span>Hampta Pass Trek</span></div>
+      <div class="booking-row"><span>Date:</span> <span>15-20 April 2025</span></div>
+      <div class="booking-row"><span>Group Size:</span> <span>4 People</span></div>
+      <div class="booking-row"><span>Guide:</span> <span>John Smith</span></div>
+    </div>
+    
+    
+
+    <h3>Payment Summary</h3>
+    <div class="summary">
+      <div class="summary-row"><span>Equipment Total:</span> <span>₹218</span></div>
+      <div class="summary-row"><span>Guide Service:</span> <span>₹150</span></div>
+      <div class="summary-row"><span>Handling Charges:</span> <span>₹35</span></div>
+      <div class="summary-row total"><span>Total Amount:</span> <span>₹403</span></div>
+    </div>
+    <br>
+    <div class="qr-section">
+      <p>Scan this</p>
+      <img src="assets/qr-code.png" alt="QR Code" />
+      <p>Note: Show your QR code before trek</p>
+    </div>
+    
+    <div class="actions">
+      <button onclick="alert('Itinerary downloaded')">Download Itinerary</button>
+      <button onclick="alert('Receipt emailed')">Email Receipt</button>
+    </div>
+  </div>
+</body>
+</html>
